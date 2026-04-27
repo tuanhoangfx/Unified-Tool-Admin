@@ -6,6 +6,7 @@
 - Added Open Repo, Pull Remote intent, and Push Local intent actions.
 - Added scanner fallback to infer GitHub repo metadata from `package.json.repository` or local `git remote`.
 - Added `scripts/push-github-api.cjs` operator helper for pushing repositories through the GitHub API.
+- Limited `Apps-Script-Sync` API push to safe metadata files after GitHub secret scanning blocked the full source tree.
 - Documented that realtime GitHub API/webhook sync is not connected yet.
 
 ## 0.4.0 - Manifest watch and P0002

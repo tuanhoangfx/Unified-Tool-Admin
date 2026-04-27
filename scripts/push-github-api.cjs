@@ -36,6 +36,7 @@ const projects = [
     cwd: 'D:\\Dev\\App Script',
     branch: 'main',
     message: 'Initialize apps script sync workspace',
+    include: ['README.md', 'SCRIPTS_MAP.md', 'package.json', '.gitignore', 'tool.manifest.json', 'PROJECT_CONTEXT.md', 'CHANGELOG.md'],
   },
 ]
 

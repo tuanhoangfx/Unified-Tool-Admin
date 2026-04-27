@@ -203,8 +203,8 @@
         },
         "changelog": {
           "path": "CHANGELOG.md",
-          "updatedAt": "2026-04-27T18:49:58.364Z",
-          "hash": "5a08cf6df4baf8c4cad92358eb0a78d5a07eacd4",
+          "updatedAt": "2026-04-27T18:53:13.261Z",
+          "hash": "ddaf602c61f125afb927a0a6aa07092822e9c849",
           "summary": "- Added GitHub Repo column in the Project Registry table. - Added Open Repo, Pull Remote intent, and Push Local intent actions."
         }
       },
@@ -321,7 +321,7 @@
       "branch": "workspace",
       "version": "docs",
       "lastRun": "Scanned registry",
-      "release": 65,
+      "release": 75,
       "incidents": 0,
       "command": "corepack pnpm login",
       "allowlistedCommands": [
@@ -337,7 +337,7 @@
         "Add per-folder PROJECT_INFO.md summaries into Unified Tool Admin.",
         "Add safe clasp push checklist."
       ],
-      "health": "Contains many Apps Script modules. Keep clasp credentials out of git via .gitignore.",
+      "health": "Contains many Apps Script modules. Full source push is blocked until hardcoded secrets are audited and moved out of source files.",
       "github": {
         "repo": "tuanhoangfx/Apps-Script-Sync",
         "branch": "main",
@@ -349,6 +349,18 @@
           "updatedAt": "2026-04-26T08:03:44.437Z",
           "hash": "c1233676bef354ad27bc8d2997da3ba604dc4808",
           "summary": "This folder is connected to the Apps Script project: - Script ID: `1rOf12OW_K864268EvMNqtsNgHrnrZ7XkQT5BwXOs86LwHMpUO8OSgD7H`"
+        },
+        "context": {
+          "path": "PROJECT_CONTEXT.md",
+          "updatedAt": "2026-04-27T18:52:44.297Z",
+          "hash": "25b7a0ec3e31455ccb120325160591c2efde7a49",
+          "summary": "Living context file for `Apps Script Sync`. - Project code: `P0005`"
+        },
+        "changelog": {
+          "path": "CHANGELOG.md",
+          "updatedAt": "2026-04-27T18:52:51.072Z",
+          "hash": "e9c59772872a168fd6d738e81a68f24ebd58e170",
+          "summary": "- Type: Metadata/Governance - Status: Partial GitHub sync"
         },
         "scriptsMap": {
           "path": "SCRIPTS_MAP.md",
@@ -363,12 +375,16 @@
         "package",
         "tool",
         "readme",
+        "project_context",
+        "changelog",
         "scripts_map"
       ],
       "detected": [
         "package.json",
         "tool.manifest.json",
         "README.md",
+        "PROJECT_CONTEXT.md",
+        "CHANGELOG.md",
         "SCRIPTS_MAP.md"
       ]
     }
