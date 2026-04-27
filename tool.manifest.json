@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "code": "P0003",
+  "id": "unified-tool-admin",
+  "aliases": ["P0003", "Unified", "Unified Tool Admin"],
+  "name": "Unified Tool Admin",
+  "type": "Desktop",
+  "owner": "Tool",
+  "status": "Ready",
+  "summary": "Central operations console for tools, webapps, extensions, and scripts inside D:\\Dev.",
+  "stack": ["React", "TypeScript", "Vite"],
+  "commands": {
+    "dev": "corepack pnpm dev",
+    "build": "corepack pnpm build",
+    "lint": "corepack pnpm lint",
+    "scan": "corepack pnpm scan:workspaces",
+    "watch": "corepack pnpm scan:watch"
+  },
+  "docs": {
+    "readme": "README.md",
+    "context": "PROJECT_CONTEXT.md",
+    "changelog": "CHANGELOG.md"
+  },
+  "github": {
+    "repo": "tuanhoangfx/Unified-Tool-Admin",
+    "branch": "main",
+    "manifestPath": "tool.manifest.json"
+  },
+  "release": {
+    "version": "0.0.0",
+    "readiness": ["build", "lint", "docs", "registry"]
+  },
+  "health": {
+    "status": "Ready",
+    "note": "Uses local scanner/watch to generate public registry data. GitHub sync actions are metadata-only until a local agent is added."
+  },
+  "nextActions": [
+    "Add local agent for safe GitHub push/pull execution.",
+    "Add GitHub remote manifest sync for configured repositories.",
+    "Add Project Code Index view in the UI."
+  ]
+}

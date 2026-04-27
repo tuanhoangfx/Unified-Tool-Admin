@@ -1,0 +1,376 @@
+{
+  "workspaceRoots": [
+    "D:\\Dev\\Tool",
+    "D:\\Dev\\Web App",
+    "D:\\Dev\\Extension",
+    "D:\\Dev\\App Script"
+  ],
+  "projects": [
+    {
+      "code": "P0001",
+      "id": "gpm-automation-console",
+      "aliases": [
+        "P0001",
+        "GPM",
+        "GPM Automation Console"
+      ],
+      "name": "GPM Automation Console",
+      "type": "Desktop",
+      "path": "D:\\Dev\\Tool\\GPM-Automation-Console",
+      "owner": "Tool",
+      "status": "Ready",
+      "summary": "Local desktop console for managing and automating GPM Login profiles through the local GPM API.",
+      "stack": "Electron + React + Vite + Playwright CDP",
+      "branch": "workspace",
+      "version": "0.1.2",
+      "lastRun": "Scanned registry",
+      "release": 95,
+      "incidents": 0,
+      "command": "corepack pnpm dev",
+      "allowlistedCommands": [
+        "corepack pnpm dev",
+        "corepack pnpm build",
+        "Open workspace",
+        "corepack pnpm dist",
+        "corepack pnpm preview"
+      ],
+      "nextAction": "Persist Run History to SQLite or a local JSON database.",
+      "nextActions": [
+        "Persist Run History to SQLite or a local JSON database.",
+        "Add workflow dry-run mode with no final submit for sensitive forms.",
+        "Add per-workflow run reports and screenshot viewer."
+      ],
+      "health": "Requires GPM Login local API at http://127.0.0.1:19995.",
+      "github": {
+        "repo": "tuanhoangfx/GPM-Automation-Console",
+        "branch": "main",
+        "manifestPath": "tool.manifest.json"
+      },
+      "docs": {
+        "readme": {
+          "path": "README.md",
+          "updatedAt": "2026-04-26T12:51:56.821Z",
+          "hash": "8f75a5c312d3601c8598bb16c67e3ac806774fb6",
+          "summary": "Local desktop app for managing and automating GPM Login profiles through the local API at `http://127.0.0.1:19995`. For project decisions and next development direction, see `PROJECT_CONTEXT.md`."
+        },
+        "context": {
+          "path": "PROJECT_CONTEXT.md",
+          "updatedAt": "2026-04-27T17:42:05.761Z",
+          "hash": "838d5200b12ea986861f930dd4db74c10cc75f6a",
+          "summary": "Living context file for `GPM Automation Console`. This file should capture decisions, product direction, implementation assumptions, and next development ideas. Keep `README.md` focused on setup and usage. Keep `CHANGELOG.md` focused on upd"
+        },
+        "changelog": {
+          "path": "CHANGELOG.md",
+          "updatedAt": "2026-04-27T17:42:54.873Z",
+          "hash": "799451fcf8b2f878dc69b83f7521d3964586e395",
+          "summary": "Update log for `GPM Automation Console`. Use this file to find a stable rollback point after each feature update. Every meaningful update should include the commit hash, affected areas, verification result, and rollback command."
+        },
+        "release": {
+          "path": "RELEASE.md",
+          "updatedAt": "2026-04-26T13:37:03.837Z",
+          "hash": "8789f20c68250d3c97b1165682f2ac1fc4b9009f",
+          "summary": "Release and update process for `GPM Automation Console`. The desktop app is packaged with Electron Builder as a Windows NSIS web installer. Public GitHub Releases are used as the install payload host and update feed for `electron-updater`."
+        }
+      },
+      "tags": [
+        "p0001",
+        "desktop",
+        "package",
+        "tool",
+        "readme",
+        "project_context",
+        "changelog"
+      ],
+      "detected": [
+        "package.json",
+        "tool.manifest.json",
+        "README.md",
+        "PROJECT_CONTEXT.md",
+        "CHANGELOG.md"
+      ]
+    },
+    {
+      "code": "P0004",
+      "id": "tool-control-center",
+      "aliases": [
+        "P0004",
+        "Tool Control Center"
+      ],
+      "name": "Tool Control Center",
+      "type": "Desktop",
+      "path": "D:\\Dev\\Tool\\Tool-Control-Center",
+      "owner": "Tool",
+      "status": "Schedule",
+      "summary": "Early web control plane scaffold for managing in-progress tools, webapps, and extensions.",
+      "stack": "React + TypeScript + Vite",
+      "branch": "workspace",
+      "version": "0.0.0",
+      "lastRun": "Scanned registry",
+      "release": 85,
+      "incidents": 0,
+      "command": "corepack pnpm dev",
+      "allowlistedCommands": [
+        "corepack pnpm dev",
+        "corepack pnpm build",
+        "corepack pnpm lint",
+        "Open workspace"
+      ],
+      "nextAction": "Decide whether to archive this scaffold or merge useful parts into Unified Tool Admin.",
+      "nextActions": [
+        "Decide whether to archive this scaffold or merge useful parts into Unified Tool Admin.",
+        "Add PROJECT_CONTEXT.md and CHANGELOG.md if active development continues."
+      ],
+      "health": "Superseded by Unified Tool Admin unless revived as a separate control-plane experiment.",
+      "github": {
+        "repo": "tuanhoangfx/Tool-Control-Center",
+        "branch": "main",
+        "manifestPath": "tool.manifest.json"
+      },
+      "docs": {
+        "readme": {
+          "path": "README.md",
+          "updatedAt": "2026-04-27T16:50:35.251Z",
+          "hash": "49599c76abb5ace1d5dcd0f9fefc286750cf415e",
+          "summary": "Web control plane for managing all in-progress tools, webapps, and extensions. - Central dashboard for project status, release readiness, and incident visibility."
+        }
+      },
+      "tags": [
+        "p0004",
+        "desktop",
+        "package",
+        "tool",
+        "readme"
+      ],
+      "detected": [
+        "package.json",
+        "tool.manifest.json",
+        "README.md"
+      ]
+    },
+    {
+      "code": "P0003",
+      "id": "unified-tool-admin",
+      "aliases": [
+        "P0003",
+        "Unified",
+        "Unified Tool Admin"
+      ],
+      "name": "Unified Tool Admin",
+      "type": "Desktop",
+      "path": "D:\\Dev\\Tool\\Unified-Tool-Admin",
+      "owner": "Tool",
+      "status": "Ready",
+      "summary": "Central operations console for tools, webapps, extensions, and scripts inside D:\\Dev.",
+      "stack": "React + TypeScript + Vite",
+      "branch": "workspace",
+      "version": "0.0.0",
+      "lastRun": "Scanned registry",
+      "release": 95,
+      "incidents": 0,
+      "command": "corepack pnpm dev",
+      "allowlistedCommands": [
+        "corepack pnpm dev",
+        "corepack pnpm build",
+        "corepack pnpm lint",
+        "Open workspace",
+        "corepack pnpm scan:workspaces",
+        "corepack pnpm scan:watch"
+      ],
+      "nextAction": "Add local agent for safe GitHub push/pull execution.",
+      "nextActions": [
+        "Add local agent for safe GitHub push/pull execution.",
+        "Add GitHub remote manifest sync for configured repositories.",
+        "Add Project Code Index view in the UI."
+      ],
+      "health": "Uses local scanner/watch to generate public registry data. GitHub sync actions are metadata-only until a local agent is added.",
+      "github": {
+        "repo": "tuanhoangfx/Unified-Tool-Admin",
+        "branch": "main",
+        "manifestPath": "tool.manifest.json"
+      },
+      "docs": {
+        "readme": {
+          "path": "README.md",
+          "updatedAt": "2026-04-27T18:49:45.330Z",
+          "hash": "fd74949c780a43107608630da5408587ad170d0a",
+          "summary": "Central web console for managing tools, webapps, browser extensions, and scripts inside `D:\\Dev`. For product direction and future work, see `PROJECT_CONTEXT.md`."
+        },
+        "context": {
+          "path": "PROJECT_CONTEXT.md",
+          "updatedAt": "2026-04-27T18:49:51.410Z",
+          "hash": "accb16a5db19480cd57fb9a41a471fb3e68be31e",
+          "summary": "Living context file for `Unified Tool Admin`. Build a central operations console for every tool, webapp, browser extension, and automation script in `D:\\Dev`."
+        },
+        "changelog": {
+          "path": "CHANGELOG.md",
+          "updatedAt": "2026-04-27T18:49:58.364Z",
+          "hash": "5a08cf6df4baf8c4cad92358eb0a78d5a07eacd4",
+          "summary": "- Added GitHub Repo column in the Project Registry table. - Added Open Repo, Pull Remote intent, and Push Local intent actions."
+        }
+      },
+      "tags": [
+        "p0003",
+        "desktop",
+        "package",
+        "tool",
+        "readme",
+        "project_context",
+        "changelog"
+      ],
+      "detected": [
+        "package.json",
+        "tool.manifest.json",
+        "README.md",
+        "PROJECT_CONTEXT.md",
+        "CHANGELOG.md"
+      ]
+    },
+    {
+      "code": "P0002",
+      "id": "yt-multistream-console",
+      "aliases": [
+        "P0002",
+        "YT",
+        "YT Multistream",
+        "YT Multistream Console"
+      ],
+      "name": "YT Multistream Console",
+      "type": "Desktop",
+      "path": "D:\\Dev\\Tool\\YT-Multistream-Console",
+      "owner": "Tool",
+      "status": "Ready",
+      "summary": "Local desktop console for running multi-channel YouTube livestream jobs from local video files or Google Drive links.",
+      "stack": "Electron + React + Vite + FFmpeg",
+      "branch": "workspace",
+      "version": "0.1.0",
+      "lastRun": "Scanned registry",
+      "release": 95,
+      "incidents": 0,
+      "command": "corepack pnpm dev",
+      "allowlistedCommands": [
+        "corepack pnpm dev",
+        "corepack pnpm build",
+        "corepack pnpm test:smoke",
+        "Open workspace",
+        "corepack pnpm preview"
+      ],
+      "nextAction": "Add stream profile templates for 720p, 1080p, and low bandwidth.",
+      "nextActions": [
+        "Add stream profile templates for 720p, 1080p, and low bandwidth.",
+        "Add queue-level retry policy and auto-restart.",
+        "Persist run history in SQLite."
+      ],
+      "health": "Requires bundled FFmpeg and valid YouTube RTMP stream keys. Stream keys must stay masked in logs.",
+      "github": {
+        "repo": "tuanhoangfx/YT-Multistream-Console",
+        "branch": "main",
+        "manifestPath": "tool.manifest.json"
+      },
+      "docs": {
+        "readme": {
+          "path": "README.md",
+          "updatedAt": "2026-04-26T11:52:48.134Z",
+          "hash": "e12cb7b36152a1c98106e8af6da2bb286eee5053",
+          "summary": "Desktop app for operating multiple YouTube livestream channels from one source set. - Multi-channel stream queue (start/stop per channel or all channels)."
+        },
+        "context": {
+          "path": "PROJECT_CONTEXT.md",
+          "updatedAt": "2026-04-27T17:56:29.500Z",
+          "hash": "7054077e485c6b79ea1e37a6f880a48b5f6e4f21",
+          "summary": "Living context file for `YT Multistream Console`. - Project code: `P0002`"
+        },
+        "changelog": {
+          "path": "CHANGELOG.md",
+          "updatedAt": "2026-04-27T17:56:35.465Z",
+          "hash": "3f229343c0e24dd08e357df10f4e6578ed3b1d55",
+          "summary": "- Type: Metadata/Governance - Status: Verified"
+        }
+      },
+      "tags": [
+        "p0002",
+        "desktop",
+        "package",
+        "tool",
+        "readme",
+        "project_context",
+        "changelog"
+      ],
+      "detected": [
+        "package.json",
+        "tool.manifest.json",
+        "README.md",
+        "PROJECT_CONTEXT.md",
+        "CHANGELOG.md"
+      ]
+    },
+    {
+      "code": "P0005",
+      "id": "apps-script-sync",
+      "aliases": [
+        "P0005",
+        "Apps Script Sync",
+        "App Script"
+      ],
+      "name": "Apps Script Sync",
+      "type": "App Script",
+      "path": "D:\\Dev\\App Script",
+      "owner": "Apps",
+      "status": "Schedule",
+      "summary": "Local Apps Script workspace synchronized with clasp and organized by script folders.",
+      "stack": "Google Apps Script + clasp + Node",
+      "branch": "workspace",
+      "version": "docs",
+      "lastRun": "Scanned registry",
+      "release": 65,
+      "incidents": 0,
+      "command": "corepack pnpm login",
+      "allowlistedCommands": [
+        "corepack pnpm login",
+        "Open workspace",
+        "corepack pnpm pull",
+        "corepack pnpm push",
+        "corepack pnpm status"
+      ],
+      "nextAction": "Review existing modified Apps Script files before release tagging.",
+      "nextActions": [
+        "Review existing modified Apps Script files before release tagging.",
+        "Add per-folder PROJECT_INFO.md summaries into Unified Tool Admin.",
+        "Add safe clasp push checklist."
+      ],
+      "health": "Contains many Apps Script modules. Keep clasp credentials out of git via .gitignore.",
+      "github": {
+        "repo": "tuanhoangfx/Apps-Script-Sync",
+        "branch": "main",
+        "manifestPath": "tool.manifest.json"
+      },
+      "docs": {
+        "readme": {
+          "path": "README.md",
+          "updatedAt": "2026-04-26T08:03:44.437Z",
+          "hash": "c1233676bef354ad27bc8d2997da3ba604dc4808",
+          "summary": "This folder is connected to the Apps Script project: - Script ID: `1rOf12OW_K864268EvMNqtsNgHrnrZ7XkQT5BwXOs86LwHMpUO8OSgD7H`"
+        },
+        "scriptsMap": {
+          "path": "SCRIPTS_MAP.md",
+          "updatedAt": "2026-04-25T13:21:38.659Z",
+          "hash": "21afe98f699bcf4ee1f360699d0e5f2318304ae6",
+          "summary": "- `Auto Upload` -> `12Dabeg9QOY81nJhrKuyHQ1izHxMh2iywR6IUzPD3CuiIMFt5eb7sTECE` - `CzP Account Data` -> `1bwfByWdbQjOTmpzprwkILAVHkfCQZcmIJIyy-kplb-QXn6DfHOrqfgeo`"
+        }
+      },
+      "tags": [
+        "p0005",
+        "app-script",
+        "package",
+        "tool",
+        "readme",
+        "scripts_map"
+      ],
+      "detected": [
+        "package.json",
+        "tool.manifest.json",
+        "README.md",
+        "SCRIPTS_MAP.md"
+      ]
+    }
+  ]
+}

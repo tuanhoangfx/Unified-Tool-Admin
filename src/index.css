@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  min-width: 1024px;
+  background: #181922;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+svg {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 760px) {
+  body {
+    min-width: 0;
+  }
+}
