@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-05-17 - Changelog standard alignment
+
+- Version: `0.0.0`
+- Timestamp: 2026-05-17 00:00 (UTC+7)
+- Commit: pending
+- Type: Maintenance
+- Status: Stable
+
+### Changes
+
+- Added parseable changelog header for GitHub Tool Manager health checks.
+- Preserved historical release notes below without rewriting prior sections.
+
+### Verification
+
+- `pnpm build`
+- Result: passed
+
 ## 0.5.0 - GitHub repo actions
 
 - Added GitHub Repo column in the Project Registry table.
